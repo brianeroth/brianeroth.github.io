@@ -1,1 +1,125 @@
-#primary-menu,.contact-me,.work-list{list-style-type:none}#primary-menu li,.site-logo,h4{text-transform:uppercase;letter-spacing:2px}iframe,img,svg{max-width:100%}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}a,body,div,em,h1,h2,h3,h4,h5,h6,html,iframe,li,ol,p,span,strong,ul{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}.site-logo,b,h1,strong{font-weight:700}html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{background:#fff;font-family:-apple-system,".SFNSText-Regular","San Francisco",Roboto,"Segoe UI","Helvetica Neue","Lucida Grande",sans-serif;font-size:16px;line-height:1.4;color:#333;padding-top:30px}article,footer,header,main,nav,section{display:block}a:focus{outline:dotted thin}a:active,a:hover{outline:0}a img{border:0}ol,ul{margin:0 0 1.5em 3em}ul{list-style:disc}ol{list-style:decimal}li>ol,li>ul{margin-bottom:0;margin-left:1.5em}em,i{font-style:italic}img,svg{height:auto}.br-cf:after,.br-cf:before{content:" ";display:table}.br-cf:after{clear:both}@media screen and (max-width:768px){body{font-size:13px}}h1{font-size:5em;line-height:110px}h4{font-size:1em;color:#666}p{margin-bottom:1.5em;font-size:1.25em;line-height:1.75em}a{text-decoration:none;color:#2D89EF;-webkit-transition:.15s ease-in-out;-moz-transition:.15s ease-in-out;-ms-transition:.15s ease-in-out;-o-transition:.15s ease-in-out;transition:.15s ease-in-out}::selection{background-color:#2D89EF;color:#fff}.container{width:1024px;margin:0 auto;padding:0 15px}@media screen and (max-width:768px){.container{width:100%}}.br-module{margin-top:60px}.br-module h4{margin-bottom:5px}.contact-me{margin:0}.contact-me li{display:inline-block;margin-right:30px}.contact-me li:last-child{margin-right:0}svg{width:35px;height:35px}svg:hover{fill:#2D89EF}.work-list{margin:0}.work-list:hover a{opacity:.3}.work-list:hover li:hover a:hover{opacity:1}.work-list li{border-bottom:1px solid #EEE}.work-list li:first-child{border-top:1px solid #EEE}.work-list li a{display:block;padding:45px 0}.work-list li .title{font-size:1.5em;font-weight:700;color:#333;width:50%;display:inline-block}.work-list li .role{color:#666}.site-logo{float:left}.icon--heart{vertical-align:middle;fill:#CE0000!important;height:60px;width:60px}.site-content{margin-top:60px}#primary-menu-container{float:right}#primary-menu li{float:left;margin-left:30px}#primary-menu li a{color:#333}#primary-menu li a:hover{color:#2D89EF}.site-footer{padding-top:100px;padding-bottom:50px;text-align:center}
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5rem 15rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  cursor: e-resize;
+}
+
+h1:hover .hand-emoji {
+  visibility: visible;
+  opacity: 1;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+small {
+  font-size: 1rem;
+}
+
+a {
+  color: #2D89EF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.hand-emoji {
+  display: inline;
+  visibility: hidden;
+  opacity: 0;
+  margin-left: 1rem;
+}
+
+.emoji-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.emoji-list li {
+  margin: 1rem 0;
+}
+
+.emoji-list li a {
+  font-weight: 500;
+  color: #000;
+}
+
+.emoji-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2rem;
+  width: 3rem;
+}
+
+.emoji-content {
+  display: inline;
+  vertical-align: middle;
+}
+
+.tag {
+  border-bottom: 1px solid #EEE;
+  padding: 0.3rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tags-list {
+  display: inline;
+}
+
+.tags-list .tag {
+  margin-left: 1rem;
+  border: 1px solid #EEE;
+  border-radius: 0.25rem;
+}
+
+.tags-list .tag-developer {
+  border-color: #2D89EF;
+  color: #2D89EF;
+}
+
+.tags-list .tag-co-founder {
+  border-color: #612def;
+  color: #612def;
+}
+
+.social-links a + a {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 14px;
+    margin: 2rem;
+  }
+
+  .emoji-icon {
+    font-size: 1.5rem;
+    width: 2.5rem;
+  }
+
+  .social-links a + a{
+    display: block;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
