@@ -11,19 +11,14 @@ h1 {
   cursor: e-resize;
 }
 
-h1:hover .hand-emoji {
-  visibility: visible;
-  opacity: 1;
+h1:hover .made-with-love {
+  display: inline;
 }
 
 p {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 1rem 0;
-}
-
-small {
-  font-size: 1rem;
 }
 
 a {
@@ -39,11 +34,10 @@ a:hover {
   margin: 2rem 0;
 }
 
-.hand-emoji {
-  display: inline;
-  visibility: hidden;
-  opacity: 0;
-  margin-left: 1rem;
+.made-with-love {
+  display: none;
+  margin-left: 3rem;
+  font-weight: 300;
 }
 
 .emoji-list {
@@ -54,6 +48,8 @@ a:hover {
 
 .emoji-list li {
   margin: 1rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .emoji-list li a {
@@ -62,43 +58,24 @@ a:hover {
 }
 
 .emoji-icon {
-  display: inline-block;
-  vertical-align: middle;
   font-size: 2rem;
   width: 3rem;
 }
 
-.emoji-content {
-  display: inline;
-  vertical-align: middle;
-}
-
 .tag {
-  border-bottom: 1px solid #EEE;
-  padding: 0.3rem;
   font-size: 0.6rem;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .tags-list {
   display: inline;
+  margin-left: 1rem;
 }
 
 .tags-list .tag {
-  margin-left: 1rem;
-  border: 1px solid #EEE;
-  border-radius: 0.25rem;
-}
-
-.tags-list .tag-developer {
-  border-color: #2D89EF;
   color: #2D89EF;
-}
-
-.tags-list .tag-co-founder {
-  border-color: #612def;
-  color: #612def;
+  font-weight: 500;
 }
 
 .social-links a + a {
